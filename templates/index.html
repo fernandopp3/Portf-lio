@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Fernando Piana Pereira</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        .code-text {
+            color: #0f0;
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 4s steps(40, end) infinite alternate;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fernando Piana Pereira</h1>
+        <p>Desenvolvedor de Software | Data Enthusiast</p>
+    </header>
+    
+    <div class="container">
+        <div class="profile">
+            <p>Olá! Sou um desenvolvedor com experiência em várias tecnologias e sempre buscando aprender mais!</p>
+        </div>
+        
+        <h2>Habilidades</h2>
+        <div class="skills">
+            <span class="skill">Python</span>
+            <span class="skill">C++</span>
+            <span class="skill">Java</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">PHP</span>
+            <span class="skill">NodeJS</span>
+            <span class="skill">React Native</span>
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+        </div>
+        
+        <div class="github-link">
+            <a href="https://github.com/fernandopp3" target="_blank"><i class="fab fa-github"></i> Meu GitHub</a>
+        </div>
+        
+        <h2>Código Animado</h2>
+        <div class="code-animation">
+            <span class="code-text">
+                def hello():
+                    print("Hello, World!")
+                
+                hello()
+            </span>
+        </div>
+    </div>
+</body>
+</html>
